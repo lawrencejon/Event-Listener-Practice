@@ -1,6 +1,7 @@
 var h1 = document.querySelector("h1");
 var h2 = document.querySelector("h2");
 var button = document.querySelector("button");
+var lis = document.querySelectorAll("li");
 h1.addEventListener("click", () => {
     document.querySelector("body").style.background = "red";
 });
@@ -10,3 +11,8 @@ h2.addEventListener("click", () => {
 button.addEventListener("click", () => {
     alert("I TOLD YOU DON'T CLICK THE BUTTON!!");
 });
+for (var i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", function() {
+        this.style.color = "#dd0";
+    });
+}
