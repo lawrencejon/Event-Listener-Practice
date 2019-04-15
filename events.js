@@ -3,7 +3,7 @@ var h2 = document.querySelector("h2");
 var button = document.querySelector("button");
 var lis = document.querySelectorAll("li");
 h1.addEventListener("click", () => {
-    document.querySelector("body").style.background = "red";
+    document.querySelector("body").style.background = "#a9a9a9";
 });
 h2.addEventListener("click", () => {
     h2.style.color = "blue";
